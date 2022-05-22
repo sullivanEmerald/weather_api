@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* form > input{
+    width: 15%;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 3px;
+
+} */
+
+/* button{
+    margin: 10px;
+    border-radius: 20px;
+    height: 40px;
+    border: 2px solid cornflowerblue;
+
+} */
+
+button:hover{
+    color: cornflowerblue;
+    border: 2px solid black;
+}
+
+
+
+
+body > h2 + section{
+    display: flex;
+    flex-basis: 15%;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+
+}
+
+form > input{
+    height: 40px;
+    display: block;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+
+button{
+    margin-top: 15px;
+    border-radius: 20px;
+    height: 40px;
+    border: 2px solid cornflowerblue;
+    flex-basis: 20%;
+    margin-right: 5px;
+
+}
+
+#list{
+    height: 400px;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+    display: block;
+    overflow: scroll;
+    background-color: rgb(208, 206, 206);
+    flex-basis: 35%;
+
+}
+
+span{
+    color:cornflowerblue;
+    display: inline-block;
+    margin-top: 10px;
+    flex-basis: 5%;
+}
+
+p{
+    flex-basis: 20%;
+}
+
+h2{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+h2::first-letter{
+    color: cornflowerblue;
+    
+}
+
+
+@media all and (max-width: 768px){
+    body > h2 + section{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        margin-top: -10px;
+    } 
+
+    button{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    
+    p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #list{
+        width: 100%;
+    }
+}
